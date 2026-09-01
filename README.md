@@ -1,10 +1,9 @@
 # Adult Income Classification 💸
-
 ## Proje Amacı
 Bu proje, 1994 yılına ait ABD Nüfus Sayımı [Kaggle - Adult Census Income Dataset](https://www.kaggle.com/datasets/priyamchoksi/adult-census-income-dataset) veri setini kullanarak bireylerin yıllık gelirlerinin **50.000$'ın üzerinde olup olmadığını ( >50K vs <=50K )** makine öğrenmesi modelleriyle tahmin etmeyi amaçlamaktadır. 
 
 ## Veri Analizi (EDA) ve Gözlemler
-*   **Sınıf Dengesizliği (Class Imbalance):** Veri setinde gelir düzeyi 50.000$'ın altında olanlar çoğunlukta (~%76), üstünde olanlar ise azınlıktadır (~%24). Bu nedenle model başarısı değerlendirilirken sadece Accuracy (Doğruluk) değil, F1 Score ve Recall metrikleri de dikkate alınmıştır.
+*   **Sınıf Dengesizliği (Class Imbalance):** Veri setinde gelir düzeyi 50.000$'ın altında olanlar çoğunlukta (%76), üstünde olanlar ise azınlıktadır (%24). Bu nedenle model başarısı değerlendirilirken sadece Accuracy (Doğruluk) değil, F1 Score ve Recall metrikleri de dikkate alınmıştır.
 *   **Çarpık Dağılımlar (Skewness):** `capital.gain` ve `capital.loss` değişkenlerinin aşırı sağa çarpık olduğu görülmüş ve buna uygun özellik mühendisliği adımları atılmıştır.
 *   **Eksik Veriler:** Veride `NaN` yerine `?` olarak kodlanmış gizli eksik değerler tespit edilmiştir.
 
@@ -43,11 +42,12 @@ Notebook'u doğrudan Kaggle ortamına yükleyip, "Adult Census Income Dataset" v
 **Seçenek 2: Yerel (Local) Ortamda**
 1. Repoyu bilgisayarınıza klonlayın:
    ```bash
-   git clone [https://github.com/BayramEnesAtay/adult-income-classification.git](https://github.com/BayramEnesAtay/adult-income-classification.git)
+   git clone https://github.com/BayramEnesAtay/adult-income-classification.git
+   ```
 2.Proje dizinine giderek gerekli kütüphaneleri yükleyin:
  ```bash
   pip install -r requirements.txt
   ```
-3.Veri setini indirin ve notebook içindeki pd.read_csv() fonksiyonunda yer alan dosya yolunu kendi bilgisayarınızdaki konuma göre güncelleyin.
+   3.Veri setini indirin ve notebook içindeki pd.read_csv() fonksiyonunda yer alan dosya yolunu kendi bilgisayarınızdaki konuma göre güncelleyin.
 
-4.Jupyter Notebook'u başlatarak hücreleri sırasıyla çalıştırın.
+   4.Jupyter Notebook'u başlatarak hücreleri sırasıyla çalıştırın.
