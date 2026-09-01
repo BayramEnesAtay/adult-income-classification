@@ -31,6 +31,7 @@ Yapılan testler sonucunda en iyi performansı gösteren algoritma **XGBoost** o
 *   **Recall (>50K sınıfı için):** 0.66
 
 Ağaç tabanlı algoritmalar bu veri seti üzerinde başarıyla uygulanmış ve pipeline kurgusuyla üretime (production) hazır, temiz bir makine öğrenmesi hattı inşa edilmiştir.
+![ROC Eğrisi](images/roc_curve_comparison.png)
 
 ## 🚀 Nasıl Çalıştırılır?
 
